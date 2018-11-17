@@ -19,7 +19,7 @@ const pollingInterval = 30000 // 30 seconds
 
 export default function App() {
   const [loading, cameras] = useFetchJsonp<CameraImage[]>(
-    `https://data.goteborg.se/TrafficCamera/v1.0/TrafficCameras/28f275ab-cf13-4899-b258-38ba6c272b40?format=json`,
+    `https://data.goteborg.se/TrafficCamera/v1.0/TrafficCameras/${process.env.REACT_APP_KEY}?format=json`,
     transformer,
     { pollingInterval }
   )
