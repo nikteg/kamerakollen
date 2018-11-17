@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "typescriptHero.imports.insertSemicolons": false,
+  "typescriptHero.imports.stringQuoteStyle": "\"",
+  "typescriptHero.imports.organizeOnSave": true
+}
